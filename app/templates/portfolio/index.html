@@ -1,0 +1,28 @@
+{% extends 'base.html'%}
+
+{% block title %}
+    Bienvenido
+{% endblock %}
+
+{% block content %}
+    <div class="hero">
+        <div class="hero-content">
+            <div class="left">
+                <h1>Sergio Vera</h1>
+                <h1>Licenciado en Sistemas</h1>
+                <p>Desarrollo sistemas contables para negocios, Gestión Empresarial, ETC.</p>
+                <a href="#contacto" class="btn desplazar">Contactame</a>
+            </div>
+            <div class="right">
+                <img src="{{ url_for('static', filename='big-data.png') }}" width="600px" alt="">
+            </div>
+        </div>
+    </div>
+{% include 'portfolio/section-first.html' %}
+
+{% include 'portfolio/section-second.html' %}
+
+{% include 'portfolio/section-third.html' %}
+
+
+{% endblock %}
